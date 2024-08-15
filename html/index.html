@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Desenvolvendo uma landing page</title>
+</head>
+<body>
+    <div id="header">
+        <h1 id="tituloprincipal">Tradição em projetos de arquitetura</h1>
+        <p id="primeiroparagrafo">Arquitetura residencial e comercial.</p>
+    </div>
+    <div id="menuopções">
+        <img src="../icon/quantidades.svg" class="icone" id="certificado" alt=""> 
+        <img src="../icon/anos.svg" class="icone" id="relogio" alt=""> 
+        <img src="../icon/metrosconstruidos.svg" class="icone" id="projetor" alt="">
+    </div>
+    <div class="content-wrapper">
+        <div class="text-content">
+            <h1>Arquitetos com História <br> e <br> Experiência</h1>
+            <p>Desde 2002, nos dedicamos à realização de projetos e ao gerenciamento de obras,<br> construindo um legado de excelência e compromisso com a qualidade. Com mais de 800 <br> projetos concluídos e uma área total de 2.000.000 de m² construídos, nos destacamos <br> no mercado pela capacidade de transformar os sonhos de nossos clientes em realidade.<br>Nosso objetivo é criar projetos que refletem a personalidade e os desejos <br> de cada cliente, unindo a tradição e a modernidade de forma harmoniosa. <br> Valorizamos cada detalhe, desde o conceito inicial até a entrega final, garantindo <br> que cada projeto seja uma obra única e personalizada. Ao longo de mais de duas <br> décadas de atuação, acumulamos uma vasta experiência e conhecimento, <br> o que nos permite enfrentar desafios com confiança e oferecer <br> soluções inovadoras. Nosso compromisso com a qualidade e a satisfação do <br> cliente é inabalável, e isso se reflete em cada etapa do nosso trabalho.<br> Estamos prontos para continuar nossa jornada, transformando sonhos <br> em projetos concretos e entregando resultados que superam as expectativas. <br> Junte-se a nós e experimente a diferença de trabalhar com uma equipe <br> dedicada e apaixonada pelo que faz.</p>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-button left" id="prevBtn">&#9664;</button>
+            <div class="carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="../image/imagem.svg" alt="Imagem 1"></li>
+                        <li class="carousel-slide"><img src="../image/imagem2.svg" alt="Imagem 2"></li>
+                        <li class="carousel-slide"><img src="../image/imagem3.svg" alt="Imagem 3"></li>
+                        <li class="carousel-slide"><img src="../image/imagem4.svg" alt="Imagem 4"></li>
+                        <li class="carousel-slide"><img src="../image/imagem5.svg" alt="Imagem 5"></li>
+                        <li class="carousel-slide"><img src="../image/imagem6.svg" alt="Imagem 6"></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="carousel-button right" id="nextBtn">&#9654;</button>
+        </div>        
+    </div>
+    <div class="form-container">
+        <div class="info">
+            <p>Conheça mais sobre nossos serviços:</p>
+        </div>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Nome" required>
+    
+            <input type="email" id="email" name="email" placeholder="Email" required>
+    
+            <button type="submit">FALE CONOSCO</button>
+        </form>
+    </div>
+    <script src="bundle.js"></script> <    
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

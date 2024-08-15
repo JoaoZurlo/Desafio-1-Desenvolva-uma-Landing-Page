@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('../Font/Inter.ttf');
+}
+
+#header {
+    background-color: #303030;
+    height: 475px;
+}
+
+#tituloprincipal {
+    font-family: 'inter';
+    font-size: 60px;
+    padding: 200px 0 0 40px;
+    color: white;
+}
+
+#primeiroparagrafo {
+    font-family: 'inter';
+    font-size: 20px;
+    padding: 10px 0 0 40px;
+    color: white;
+}
+
+#menuopções {
+    background-color: #F9F9F9;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0 30px 0 100px;
+}
+
+.icone {
+    margin: 50px 0 50px 100px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 100%; /* Ajusta a largura do contêiner conforme necessário */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adiciona um pouco de espaço ao redor do contêiner */
+}
+
+.text-content {
+    flex: 1;
+    text-align: justify; /* Justifica o texto */
+    margin-right: 20px; /* Espaçamento entre o texto e o carrossel */
+}
+
+.text-content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 500px; /* Ajuste a largura do carrossel conforme necessário */
+    height: auto; /* Permite que a altura se ajuste às imagens */
+    overflow: hidden; /* Garante que nada saia do contêiner */
+    right: 400px;
+}
+
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%; /* Ocupa 100% da largura do contêiner */
+    flex: 0 0 100%; /* Cada slide ocupa 100% da largura do carrossel */
+}
+
+.carousel-slide img {
+    width: 100%; /* A imagem se ajusta à largura do slide */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block;
+    border: 15px solid #000000; /* Adiciona uma borda fina e cinza às imagens */
+    box-sizing: border-box; /* Garante que a borda seja incluída nas dimensões da imagem */
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.left {
+    left: 10px;
+    display: none; /* Ocultar o botão esquerdo inicialmente */
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+
+.form-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030; /* Cor de fundo opcional */
+}
+
+.info {
+    width: 100%;
+    max-width: 600px; /* Largura máxima opcional */
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento entre o texto e o formulário */
+}
+
+.info p {
+    font-size: 18px;
+    color: #ffffff; /* Cor do texto opcional */
+    font-family: 'inter';
+    font-size: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 300px; /* Largura máxima opcional */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    background-color: #fff; /* Cor de fundo opcional */
+    border-radius: 8px; /* Bordas arredondadas opcionais */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo do formulário */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura */
+}
+
+input::placeholder {
+    color: #888; /* Cor do placeholder opcional */
+    font-size: 16px; /* Tamanho da fonte opcional */
+}
+
+button {
+    width: 50%; /* Reduz a largura do botão para 50% da largura do formulário */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaçamento acima do botão */
+}
+
+button:hover {
+    background-color: #45a049;
+}
