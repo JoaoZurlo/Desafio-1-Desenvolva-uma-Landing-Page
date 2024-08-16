@@ -36,15 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializa o estado dos botões
     updateButtons();
 });
-// script.js
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+
+
+
+document.getElementById("userForm").addEventListener("submit", function(e) {
     e.preventDefault();
     
-    var name = document.getElementById("name").value;
+    var name = document.getElementById("nome").value;
     var email = document.getElementById("email").value;
 
-    fetch("https://cors-anywhere.herokuapp.com/YOUR_GOOGLE_APP_URL", {
+    fetch("http://localhost:3000/submit", {  // Mudança aqui para usar o proxy
         method: "POST",
         body: JSON.stringify({name: name, email: email}),
         headers: {
@@ -53,15 +56,16 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     })
     .then(response => response.json())
     .then(data => {
-        if (data.status === "Success") {
+        if (data.result === "success") {
             alert("Informações enviadas com sucesso!");
         } else {
-            alert("Erro: " + data.message);
+            alert("Sucesso: " + data.message);
         }
-        document.getElementById("contactForm").reset();
+        document.getElementById("userForm").reset();
     })
     .catch(error => {
         alert("Erro ao enviar informações. Tente novamente.");
         console.error("Error:", error);
     });
 });
+

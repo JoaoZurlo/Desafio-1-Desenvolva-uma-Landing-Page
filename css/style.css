@@ -98,22 +98,27 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(55, 255, 0, 0.5);
     border: none;
     color: white;
-    padding: 10px;
+    padding: 5px; /* Reduz o padding geral para diminuir o tamanho dos botões */
+    font-size: 12px; /* Mantém o texto pequeno */
+    width: auto; /* Remove qualquer largura fixa */
+    height: auto; /* Remove qualquer altura fixa */
     cursor: pointer;
     z-index: 10;
 }
 
 .carousel-button.left {
-    left: 10px;
-    display: none; /* Ocultar o botão esquerdo inicialmente */
+    left: 10px; /* Ajusta a posição do botão esquerdo */
+    display: none; /* Oculta o botão esquerdo inicialmente */
 }
 
 .carousel-button.right {
-    right: 10px;
+    right: 10px; /* Ajusta a posição do botão direito */
 }
+
+
 
 
 .form-container {
@@ -178,5 +183,5 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #f20000;
 }
